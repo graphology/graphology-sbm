@@ -1,0 +1,46 @@
+{
+  "name": "graphology-sbm",
+  "version": "0.0.1",
+  "description": "Stochastic Block Model (SBM) for graphology.",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "prepublish": "npm run lint && npm test",
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graphology/graphology-sbm.git"
+  },
+  "keywords": [
+    "graph",
+    "graphology",
+    "sbm"
+  ],
+  "contributors": [
+    {
+      "name": "Guillaume Plique",
+      "url": "http://github.com/Yomguithereal"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/graphology/graphology-sbm/issues"
+  },
+  "homepage": "https://github.com/graphology/graphology-sbm#readme",
+  "devDependencies": {
+    "@yomguithereal/eslint-config": "^4.0.0",
+    "eslint": "^5.16.0",
+    "graphology": "^0.14.1",
+    "mocha": "^6.1.2"
+  },
+  "eslintConfig": {
+    "extends": "@yomguithereal/eslint-config",
+    "globals": {
+      "Set": true
+    }
+  }
+}
